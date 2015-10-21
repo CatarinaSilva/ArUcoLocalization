@@ -1,14 +1,17 @@
 # ArUcoLocalization
 
-A project for localization and mapping of a space using ArUco markers. 
+A project for obtaining localization and mapping of a space using vision and ArUco markers. 
 
-The implementation is done with openCV3. 
+The project was built using:
+* openCV3 with necessary video encoders/decoders
+* C++ and MATLAB
+* mexopencv
+
+### Instalation 
+Follow the steps in README inside installation folder. 
 
 
-## OpenCV3 instalation 
-
-
-## ArUco markers
+### ArUco markers
 
 Usefull links:
 * ArUco (original): http://www.uco.es/investiga/grupos/ava/node/26
