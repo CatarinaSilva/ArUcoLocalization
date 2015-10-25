@@ -64,7 +64,7 @@ sudo rm -R ~/ffmpeg
 ##****************************************************************************************************************************************************************
 ## 3) dependencies
 
-sudo apt-get autoremove build-essential cmake mercurial checkinstall git pkg-config autoconf automake libtool \
+sudo apt-get autoremove build-essential cmake mercurial checkinstall git autoconf automake libtool \
   libtbb2 libtbb-dev  \
   libgtk2.0-dev qt5-default libvtk6-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev \
   zlib1g-dev libjpeg-dev libwebp-dev libpng-dev libtiff-dev libtiff5-dev libjasper-dev libopenexr-dev libgdal-dev libsdl1.2-dev libfreetype6-dev \
@@ -74,6 +74,12 @@ sudo apt-get autoremove build-essential cmake mercurial checkinstall git pkg-con
   ant default-jdk \
   doxygen texinfo \
   yasm libmp3lame-dev libopus-dev libvpx-dev \
-
+  gstreamer-dbus-media-service gstreamer-tools gstreamer0.10-alsa gstreamer0.10-buzztard gstreamer0.10-buzztard-doc gstreamer0.10-crystalhd gstreamer0.10-doc\
+  gstreamer0.10-ffmpeg gstreamer0.10-ffmpeg-dbg gstreamer0.10-fluendo-mp3 gstreamer0.10-gconf gstreamer0.10-gnomevfs gstreamer0.10-gnonlin\
+  gstreamer0.10-gnonlin-dbg gstreamer0.10-gnonlin-doc gstreamer0.10-hplugins gstreamer0.10-nice gstreamer0.10-packagekit gstreamer0.10-plugins-bad \
+  gstreamer0.10-plugins-bad-doc gstreamer0.10-plugins-bad-multiverse gstreamer0.10-plugins-base gstreamer0.10-plugins-base-apps\
+  gstreamer0.10-plugins-base-dbg gstreamer0.10-plugins-base-doc gstreamer0.10-plugins-cutter gstreamer0.10-plugins-good gstreamer0.10-plugins-good-doc \
+  gstreamer0.10-plugins-ugly gstreamer0.10-plugins-ugly-doc gstreamer0.10-pocketsphinx gstreamer0.10-pulseaudio gstreamer0.10-qapt gstreamer0.10-sdl\
+  gstreamer0.10-tools gstreamer0.10-vaapi gstreamer0.10-vaapi-doc gstreamer0.10-x
 
 
