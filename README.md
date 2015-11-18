@@ -26,7 +26,7 @@ Usefull links:
 
 The installation should be done in the home folder and the resulting folder structure should be the following:
 
-Folder structure
+##### Folder structure
 
 * home folder 
 	* opencv
