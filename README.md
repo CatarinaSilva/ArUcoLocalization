@@ -1,8 +1,8 @@
 # ArUcoLocalization
 
-A project for obtaining localization and mapping of a space using vision and ArUco markers. 
+Obtaining localization and mapping of a space using vision and ArUco markers. 
 
-The project was built using:
+##### Programs
 * openCV3 with necessary video encoders/decoders
 * C++ and MATLAB
 * mexopencv
@@ -28,31 +28,20 @@ The installation should be done in the home folder and the resulting folder stru
 
 Folder structure
 
- --> home folder 
- 
- ------> opencv  
- 
- ----------> opencv_contrib (optional)
- 
- ----------> opencv_extras (optional)
- 
- ----------> release 
- 
- ----> ffmpeg
- 
- ----------> sources
- 
- ----------> build
+* home folder 
+	* opencv
+		* opencv_contrib (optional)
+		* opencv_extras (optional)
+		* release 
+	* ffmpeg
+		* sources
+		* build
 
+##### Sources:
 
-Sources:
-
- ---- http://docs.opencv.org/doc/tutorials/introduction/linux_install/linux_install.html 
- 
- ---- http://docs.opencv.org/3.0-last-rst/doc/tutorials/introduction/linux_install/linux_install.html
- 
- ---- https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
- 
- ---- http://milq.github.io/install-opencv-ubuntu-debian/
-http://www.ozbotz.org/opencv-installation/
+* http://docs.opencv.org/doc/tutorials/introduction/linux_install/linux_install.html 
+* http://docs.opencv.org/3.0-last-rst/doc/tutorials/introduction/linux_install/linux_install.html
+* https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
+* http://milq.github.io/install-opencv-ubuntu-debian/
+* http://www.ozbotz.org/opencv-installation/
 
