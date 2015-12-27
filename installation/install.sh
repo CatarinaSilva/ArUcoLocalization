@@ -24,12 +24,12 @@ sudo apt-get upgrade
 ## 2) GCC, G++, GFORTRAN
 # install necessary compilers for C++ use and Matlab use: G++ is the important one, but this way we compile mex such that gcc and fortran are already set
 # gcc 4.7, g++ 4.7 and gfortran 4.7 are compatible with matlab R2014b, change if Matlab version is different, but make sure it is still compatible both with openCV, mexopencv and Matlab
-sudo apt-get install gcc
-sudo apt-get install g++
-sudo apt-get install gfortran
-sudo apt-get install gcc-4.7
-sudo apt-get install g++-4.7
-sudo apt-get install gfortran-4.7
+sudo apt-get install gcc -y 
+sudo apt-get install g++ -y 
+sudo apt-get install gfortran -y 
+sudo apt-get install gcc-4.7 -y 
+sudo apt-get install g++-4.7 -y 
+sudo apt-get install gfortran-4.7 -y 
 
 # specify gcc, g++ and fortran compilers to be used by the system (linking each to the 4.7 version)
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.7 --slave /usr/bin/gfortran gfortran /usr/bin/gfortran-4.7
@@ -40,36 +40,36 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.7 60 --slave 
 ##****************************************************************************************************************************************************************
 ## 3) Some ffmpeg/openCV general dependencies:
 # Build tools
-sudo apt-get install build-essential cmake mercurial checkinstall git pkg-config autoconf automake libtool
+sudo apt-get install build-essential cmake mercurial checkinstall git pkg-config autoconf automake libtool -y 
 
 #TBB:
-sudo apt-get install libtbb2 libtbb-dev
+sudo apt-get install libtbb2 libtbb-dev -y 
 
 # GUI:
-sudo apt-get install libgtk2.0-dev qt5-default libvtk6-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev 
+sudo apt-get install libgtk2.0-dev qt5-default libvtk6-dev libxcb1-dev libxcb-shm0-dev libxcb-xfixes0-dev -y 
 
 # Media I/O:
-sudo apt-get install zlib1g-dev libjpeg-dev libwebp-dev libpng-dev libtiff-dev libtiff5-dev libjasper-dev libopenexr-dev libgdal-dev libsdl1.2-dev libfreetype6-dev 
+sudo apt-get install zlib1g-dev libjpeg-dev libwebp-dev libpng-dev libtiff-dev libtiff5-dev libjasper-dev libopenexr-dev libgdal-dev libsdl1.2-dev libfreetype6-dev -y 
 
 # Video I/O:
-sudo apt-get install libdc1394-22-dev libavcodec-dev libavformat-dev libswscale-dev libtheora-dev libvorbis-dev libxvidcore-dev libopencore-amrnb-dev libopencore-amrwb-dev libv4l-dev libxine2-dev v4l-utils libvdpau-dev libva-dev libass-dev
+sudo apt-get install libdc1394-22-dev libavcodec-dev libavformat-dev libswscale-dev libtheora-dev libvorbis-dev libxvidcore-dev libopencore-amrnb-dev libopencore-amrwb-dev libv4l-dev libxine2-dev v4l-utils libvdpau-dev libva-dev libass-dev -y 
 
 # Parallelism and linear algebra libraries:
-sudo apt-get install libtbb-dev libeigen3-dev
+sudo apt-get install libtbb-dev libeigen3-dev -y 
 
 # Python:
-sudo apt-get install python-dev python-tk python-numpy python3-dev python3-tk python3-numpy
+sudo apt-get install python-dev python-tk python-numpy python3-dev python3-tk python3-numpy -y 
 
 # Java
-sudo apt-get install ant default-jdk
+sudo apt-get install ant default-jdk -y 
 
 # Documentation:
-sudo apt-get install doxygen texinfo 
+sudo apt-get install doxygen texinfo -y 
 
 
 ##*************************************
 # new - to test
-sudo apt-get install libfaac-dev libjack-jackd2-dev libx11-dev libxfixes-dev texi2html
+sudo apt-get install libfaac-dev libjack-jackd2-dev libx11-dev libxfixes-dev texi2html -y 
 
 
 
@@ -88,10 +88,10 @@ sudo mkdir build
 cd sources
 
 # YASM
-sudo apt-get install yasm
+sudo apt-get install yasm -y 
 
 # H.264 video encoder
-sudo apt-get install libx264-dev
+sudo apt-get install libx264-dev -y 
 
 # H.265/HEVC video encoder (not used later on in ffmpeg configuration)
 cd ~/ffmpeg/sources
@@ -116,10 +116,10 @@ sudo make distclean
 cd ~/ffmpeg/sources
 
 # MP3 audio encoder
-sudo apt-get install libmp3lame-dev
+sudo apt-get install libmp3lame-dev -y 
 
 # Opus audio decoder and encoder
-sudo apt-get install libopus-dev
+sudo apt-get install libopus-dev -y 
 
 # VP8/VP9 video encoder and decoder
 cd ~/ffmpeg/sources
